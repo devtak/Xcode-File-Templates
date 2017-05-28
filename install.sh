@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-# Default the folder name to "Custom Base UI".
-folderName="Custom Base UI"
+# Default the folder name to "Custom Swift".
+folderName="Custom Swift"
 
 # Ensure that at most one argument has been passed in.
 if [ "$#" -eq 1 ]
@@ -9,7 +9,7 @@ then
 	folderName=$1
 elif [ "$#" -gt 1 ]
 then
-	echo -e "This script takes one argument at most.\\ne.g. install.sh \"Custom Base UI\""
+	echo -e "This script takes one argument at most.\\ne.g. install.sh \"Custom Swift\""
 	exit 1
 fi
 
