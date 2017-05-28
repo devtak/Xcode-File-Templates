@@ -13,7 +13,7 @@ then
 	exit 1
 fi
 
-installDirectory=~/Library/Developer/Xcode/Templates/"${folderName}"
+installDirectory=~/Library/Developer/Xcode/Templates/File\ Templates/"${folderName}"
 
 echo "Templates will be installed to ${installDirectory}"
 

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>Description</key>
+	<string>An Swift UI class. with implementation file.</string>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>Summary</key>
+	<string>An Swift UI class. with implementation file.</string>
+	<key>SortOrder</key>
+	<string>30</string>
+	<key>AllowedTypes</key>
+	<array>
+		<string>public.swift-source</string>
+	</array>
+	<key>DefaultCompletionName</key>
+	<string>File</string>
+	<key>MainTemplateFile</key>
+	<string>___FILEBASENAME___.swift</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>className</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Required</key>
+			<string>YES</string>
+			<key>NotPersisted</key>
+			<string>YES</string>
+			<key>Name</key>
+			<string>Class Name</string>
+			<key>Description</key>
+			<string>The name of the class.</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>subclass</string>
+			<key>Type</key>
+			<string>class</string>
+			<key>Required</key>
+			<string>YES</string>
+			<key>NotPersisted</key>
+			<string>YES</string>
+			<key>Values</key>
+			<array>
+				<string>UIView</string>
+				<string>UITableViewCell</string>
+				<string>UIViewController</string>
+			</array>
+			<key>Default</key>
+			<string>UIViewController</string>
+			<key>Name</key>
+			<string>Subclass of</string>
+			<key>Description</key>
+			<string>The class being subclassed.</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Type</key>
+			<string>static</string>
+			<key>Default</key>
+			<string>___VARIABLE_className:identifier___</string>
+		</dict>
+	</array>
+</dict>
+</plist>
