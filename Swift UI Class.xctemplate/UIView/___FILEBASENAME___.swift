@@ -10,11 +10,11 @@ import UIKit
 
 class ___FILEBASENAMEASIDENTIFIER___: UIView {
     
-    //MARK: - properties
+    // MARK: - properties
     
-    //MARK: - public method
+    // MARK: - public method
     
-    //MARK: - init / deinit
+    // MARK: - init / deinit
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.setupSubViews()
@@ -29,7 +29,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UIView {
     
 }
 
-//MARK: - override
+// MARK: - override
 extension ___FILEBASENAMEASIDENTIFIER___ {
     
     override func layoutSubviews() {
@@ -38,7 +38,7 @@ extension ___FILEBASENAMEASIDENTIFIER___ {
     
 }
 
-//MARK: - private
+// MARK: - private
 fileprivate extension ___FILEBASENAMEASIDENTIFIER___ {
     
     func setupSubViews() {
@@ -46,7 +46,7 @@ fileprivate extension ___FILEBASENAMEASIDENTIFIER___ {
     
 }
 
-//MARK: - event
+// MARK: - event
 extension ___FILEBASENAMEASIDENTIFIER___ {
 }
 

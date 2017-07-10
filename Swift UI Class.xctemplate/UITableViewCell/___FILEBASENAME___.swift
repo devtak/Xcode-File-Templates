@@ -10,11 +10,11 @@ import UIKit
 
 class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell {
     
-    //MARK: - properties
+    // MARK: - properties
 
-    //MARK: - public method
+    // MARK: - public method
     
-    //MARK: - init / deinit
+    // MARK: - init / deinit
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.setupSubViews()
@@ -29,7 +29,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell {
     
 }
 
-//MARK: - override
+// MARK: - override
 extension ___FILEBASENAMEASIDENTIFIER___ {
     
     override func layoutSubviews() {
@@ -42,7 +42,7 @@ extension ___FILEBASENAMEASIDENTIFIER___ {
     
 }
 
-//MARK: - private
+// MARK: - private
 fileprivate extension ___FILEBASENAMEASIDENTIFIER___ {
     
     func setupSubViews() {
@@ -50,7 +50,7 @@ fileprivate extension ___FILEBASENAMEASIDENTIFIER___ {
     
 }
 
-//MARK: - event
+// MARK: - event
 extension ___FILEBASENAMEASIDENTIFIER___ {
 }
 

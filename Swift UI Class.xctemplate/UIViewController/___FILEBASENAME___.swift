@@ -10,11 +10,11 @@ import UIKit
 
 class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     
-    //MARK: - properties
+    // MARK: - properties
     
-    //MARK: - public method
+    // MARK: - public method
     
-    //MARK: - init / deinit
+    // MARK: - init / deinit
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
@@ -28,7 +28,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     
 }
 
-//MARK: - override
+// MARK: - override
 extension ___FILEBASENAMEASIDENTIFIER___ {
     
     override func viewDidLoad() {
@@ -70,7 +70,7 @@ extension ___FILEBASENAMEASIDENTIFIER___ {
     
 }
 
-//MARK: - private
+// MARK: - private
 fileprivate extension ___FILEBASENAMEASIDENTIFIER___ {
     
     func setupNavigationBar() {
@@ -81,7 +81,7 @@ fileprivate extension ___FILEBASENAMEASIDENTIFIER___ {
     
 }
 
-//MARK: - event
+// MARK: - event
 extension ___FILEBASENAMEASIDENTIFIER___ {
 }
 
