@@ -8,15 +8,13 @@
 
 import UIKit
 
-
 class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     
     //MARK: - properties
     
     //MARK: - public method
     
-    
-    //MARK: - init /deinit
+    //MARK: - init / deinit
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
@@ -29,7 +27,6 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     }
     
 }
-
 
 //MARK: - override
 extension ___FILEBASENAMEASIDENTIFIER___ {
@@ -72,7 +69,6 @@ extension ___FILEBASENAMEASIDENTIFIER___ {
     }
     
 }
-
 
 //MARK: - private
 fileprivate extension ___FILEBASENAMEASIDENTIFIER___ {

@@ -8,16 +8,13 @@
 
 import UIKit
 
-
 class ___FILEBASENAMEASIDENTIFIER___: UIView {
     
     //MARK: - properties
     
-    
     //MARK: - public method
     
-    
-    //MARK: - init /deinit
+    //MARK: - init / deinit
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.setupSubViews()
@@ -31,7 +28,6 @@ class ___FILEBASENAMEASIDENTIFIER___: UIView {
     }
     
 }
-
 
 //MARK: - override
 extension ___FILEBASENAMEASIDENTIFIER___ {

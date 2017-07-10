@@ -8,18 +8,13 @@
 
 import UIKit
 
-
 class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell {
     
     //MARK: - properties
-    public static var reuseIdentifier: String {
-        return String(describing: self)
-    }
 
     //MARK: - public method
     
-    
-    //MARK: - init /deinit
+    //MARK: - init / deinit
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.setupSubViews()
@@ -34,7 +29,6 @@ class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell {
     
 }
 
-
 //MARK: - override
 extension ___FILEBASENAMEASIDENTIFIER___ {
     
@@ -47,7 +41,6 @@ extension ___FILEBASENAMEASIDENTIFIER___ {
     }
     
 }
-
 
 //MARK: - private
 fileprivate extension ___FILEBASENAMEASIDENTIFIER___ {
