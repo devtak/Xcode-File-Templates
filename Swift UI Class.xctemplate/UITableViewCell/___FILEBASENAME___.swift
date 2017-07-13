@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell {
+final class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell {
     
     // MARK: - properties
 

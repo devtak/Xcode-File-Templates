@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
+final class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     
     // MARK: - properties
     

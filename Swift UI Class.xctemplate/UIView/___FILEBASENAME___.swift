@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ___FILEBASENAMEASIDENTIFIER___: UIView {
+final class ___FILEBASENAMEASIDENTIFIER___: UIView {
     
     // MARK: - properties
     
