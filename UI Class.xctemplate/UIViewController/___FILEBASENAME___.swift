@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 final class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     
     // MARK: - properties
-    
+    fileprivate let viewModel = <#name#>ViewModel()
+    fileprivate let disposeBag = DisposeBag()
+
     // MARK: - public method
     
     // MARK: - initilizer
@@ -34,7 +38,8 @@ extension ___FILEBASENAMEASIDENTIFIER___ {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupNavigationBar()
-        self.setupSubViews()
+        self.setupSubviews()
+        self.setupBindings()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -76,7 +81,10 @@ fileprivate extension ___FILEBASENAMEASIDENTIFIER___ {
     func setupNavigationBar() {
     }
 
-    func setupSubViews() {
+    func setupSubviews() {
+    }
+    
+    func setupBindings() {
     }
     
 }

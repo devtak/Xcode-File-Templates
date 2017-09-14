@@ -7,20 +7,19 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
-final class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell {
+final class ___FILEBASENAMEASIDENTIFIER___: UIView {
     
     // MARK: - properties
-    public static var reuseIdentifier: String {
-        return String(describing: self)
-    }
-
+    
     // MARK: - public method
     
     // MARK: - initializer
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        self.setupSubViews()
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.setupSubviews()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -39,16 +38,12 @@ extension ___FILEBASENAMEASIDENTIFIER___ {
         super.layoutSubviews()
     }
     
-    override func prepareForReuse() {
-        super.prepareForReuse()
-    }
-    
 }
 
 // MARK: - private
 fileprivate extension ___FILEBASENAMEASIDENTIFIER___ {
     
-    func setupSubViews() {
+    func setupSubviews() {
     }
     
 }
