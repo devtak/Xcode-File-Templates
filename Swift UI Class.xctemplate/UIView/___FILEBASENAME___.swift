@@ -14,7 +14,7 @@ final class ___FILEBASENAMEASIDENTIFIER___: UIView {
     
     // MARK: - public method
     
-    // MARK: - init / deinit
+    // MARK: - initializer
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.setupSubViews()
@@ -49,4 +49,3 @@ fileprivate extension ___FILEBASENAMEASIDENTIFIER___ {
 // MARK: - event
 extension ___FILEBASENAMEASIDENTIFIER___ {
 }
-

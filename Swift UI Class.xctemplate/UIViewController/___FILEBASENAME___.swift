@@ -14,7 +14,7 @@ final class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     
     // MARK: - public method
     
-    // MARK: - init / deinit
+    // MARK: - initilizer
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
@@ -84,4 +84,3 @@ fileprivate extension ___FILEBASENAMEASIDENTIFIER___ {
 // MARK: - event
 extension ___FILEBASENAMEASIDENTIFIER___ {
 }
-

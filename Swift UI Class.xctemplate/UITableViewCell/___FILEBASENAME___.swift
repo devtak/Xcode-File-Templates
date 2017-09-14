@@ -11,10 +11,13 @@ import UIKit
 final class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell {
     
     // MARK: - properties
+    public static var reuseIdentifier: String {
+        return String(describing: self)
+    }
 
     // MARK: - public method
     
-    // MARK: - init / deinit
+    // MARK: - initializer
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.setupSubViews()
@@ -53,4 +56,3 @@ fileprivate extension ___FILEBASENAMEASIDENTIFIER___ {
 // MARK: - event
 extension ___FILEBASENAMEASIDENTIFIER___ {
 }
-
