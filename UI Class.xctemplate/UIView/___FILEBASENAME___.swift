@@ -9,17 +9,13 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import CommonUtils
 
 final class ___FILEBASENAMEASIDENTIFIER___: UIView {
     
-    // MARK: - properties
-    
-    // MARK: - public method
-    
-    // MARK: - initializer
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.setupSubviews()
+        setupSubviews()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -32,6 +28,7 @@ final class ___FILEBASENAMEASIDENTIFIER___: UIView {
 }
 
 // MARK: - override
+
 extension ___FILEBASENAMEASIDENTIFIER___ {
     
     override func layoutSubviews() {
@@ -41,13 +38,10 @@ extension ___FILEBASENAMEASIDENTIFIER___ {
 }
 
 // MARK: - private
-fileprivate extension ___FILEBASENAMEASIDENTIFIER___ {
+
+private extension ___FILEBASENAMEASIDENTIFIER___ {
     
     func setupSubviews() {
     }
     
-}
-
-// MARK: - event
-extension ___FILEBASENAMEASIDENTIFIER___ {
 }

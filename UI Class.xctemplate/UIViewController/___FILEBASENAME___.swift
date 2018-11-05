@@ -9,37 +9,33 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import CommonUtils
 
 final class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     
-    // MARK: - properties
-    fileprivate let viewModel = <#name#>ViewModel()
-    fileprivate let disposeBag = DisposeBag()
+    private var viewModel: <#name#>ViewModel!
 
-    // MARK: - public method
-    
-    // MARK: - initilizer
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        viewModel = <#name#>ViewModel()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    deinit {
-    }
-    
 }
 
 // MARK: - override
+
 extension ___FILEBASENAMEASIDENTIFIER___ {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupNavigationBar()
-        self.setupSubviews()
-        self.setupBindings()
+        setupNavigationBar()
+        setupSubviews()
+        setupUIBindings()
+        setupEventBindings()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -68,15 +64,16 @@ extension ___FILEBASENAMEASIDENTIFIER___ {
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
-        coordinator.animate(alongsideTransition: { (context: UIViewControllerTransitionCoordinatorContext) in
-        }) { (context: UIViewControllerTransitionCoordinatorContext) in
-        }
+        coordinator.animate(alongsideTransition: { (context) in
+        }, completion: { (context) in
+        })
     }
     
 }
 
 // MARK: - private
-fileprivate extension ___FILEBASENAMEASIDENTIFIER___ {
+
+private extension ___FILEBASENAMEASIDENTIFIER___ {
     
     func setupNavigationBar() {
     }
@@ -84,11 +81,20 @@ fileprivate extension ___FILEBASENAMEASIDENTIFIER___ {
     func setupSubviews() {
     }
     
-    func setupBindings() {
+    func setupUIBindings() {
     }
-    
-}
 
-// MARK: - event
-extension ___FILEBASENAMEASIDENTIFIER___ {
+    func setupEventBindings() {
+        viewModel.status.asObservable()
+            .subscribeOn(MainScheduler.instance)
+            .subscribe(onNext: { (status) in
+                switch status {
+                case .alertError(let error):
+                    AppUtils.alert(title: "", message: error.errorMessage())
+                case .showLoading(let loading):
+                    weakSelf.scrollView.showLoading(isShow: loading)
+                }
+            }).disposed(by: viewModel.disposeBag)
+    }
+
 }
