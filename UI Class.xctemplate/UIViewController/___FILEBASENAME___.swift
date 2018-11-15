@@ -85,15 +85,9 @@ private extension ___FILEBASENAMEASIDENTIFIER___ {
     }
 
     func setupEventBindings() {
-        viewModel.status.asObservable()
+        viewModel.state.asObservable()
             .subscribeOn(MainScheduler.instance)
             .subscribe(onNext: { (status) in
-                switch status {
-                case .alertError(let error):
-                    AppUtils.alert(title: "", message: error.errorMessage())
-                case .showLoading(let loading):
-                    weakSelf.scrollView.showLoading(isShow: loading)
-                }
             }).disposed(by: viewModel.disposeBag)
     }
 
