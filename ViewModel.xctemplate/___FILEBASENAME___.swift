@@ -17,7 +17,7 @@ final class ___FILEBASENAMEASIDENTIFIER___: ViewModel<___FILEBASENAMEASIDENTIFIE
         setupEventBindings()
     }
     
-    struct State: ViewState {
+    final class State: ViewState {
     }
     
     enum Event {
