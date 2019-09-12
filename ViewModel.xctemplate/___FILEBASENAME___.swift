@@ -3,38 +3,41 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
+//  Copyright © ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
 import Foundation
-import RxSwift
+import SwiftUI
+import Combine
 import CommonUtils
 
-final class ___FILEBASENAMEASIDENTIFIER___: ViewModel<___FILEBASENAMEASIDENTIFIER___.State, ___FILEBASENAMEASIDENTIFIER___.Event> {
+final class ___FILEBASENAMEASIDENTIFIER___: ViewModel<___FILEBASENAMEASIDENTIFIER___.State, ___FILEBASENAMEASIDENTIFIER___.Action> {
     
-    override init() {
-        super.init()
-        setupEventBindings()
+    struct State {
+        var title: String
+        var isLoading = false
+        
+        init() {
+            title = "title"
+        }
     }
     
-    final class State: ViewState {
+    enum Action {
+        case changeTitle(String)
     }
-    
-    enum Event {
+
+    func execute(action: Action) {
+        switch action {
+        case .changeTitle(let title):
+            reduce(\.isLoading, true)
+            reduce(\.title, title)
+            reduce(\.isLoading, false)
+        }
     }
 
 }
 
-// MARK: - Action
-
-extension ___FILEBASENAMEASIDENTIFIER___ {
-}
-
-// MARK: - Event
+// MARK: - Private
 
 private extension ___FILEBASENAMEASIDENTIFIER___ {
-    
-    func setupEventBindings() {
-    }
-    
 }
