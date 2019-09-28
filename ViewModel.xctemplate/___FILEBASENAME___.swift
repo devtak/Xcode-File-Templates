@@ -3,13 +3,9 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright © ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
 import Foundation
-import SwiftUI
-import Combine
-import CommonUtils
 
 final class ___FILEBASENAMEASIDENTIFIER___: ViewModel<___FILEBASENAMEASIDENTIFIER___.State, ___FILEBASENAMEASIDENTIFIER___.Action> {
     
