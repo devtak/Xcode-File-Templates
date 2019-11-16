@@ -49,12 +49,11 @@
 			<string>YES</string>
 			<key>Values</key>
 			<array>
-				<string>UIView</string>
-				<string>UITableViewCell</string>
-				<string>UIViewController</string>
+				<string>View</string>
+				<string>UIViewRepresentable</string>
 			</array>
 			<key>Default</key>
-			<string>UIView</string>
+			<string>View</string>
 			<key>Name</key>
 			<string>Subclass of</string>
 			<key>Description</key>
